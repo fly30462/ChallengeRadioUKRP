@@ -231,7 +231,7 @@ dark-theme may be swapped for light-theme
 	
 		<div class="radioplayer-head">
 		
-			<a class="stn-logo"  href="http://www.chall" target="_blank"   id="station-logo-link" rel="external">Challenge Radio</a>
+			<a class="stn-logo"  href="http://www.challengeradio.co.uk" target="_blank"   id="station-logo-link" rel="external">Challenge Radio</a>
 		  
 			<div id="controls">
 				<h2 class="access">Player Controls</h2>  
