@@ -17,8 +17,8 @@ than for usage associated with connecting to the UK Radioplayer Service in accor
 Terms and Conditions, and you shall not convey nor sublicense the Software, including the source 
 code, for any other purpose or to any third party, without the prior written consent of UK Radioplayer.
 -->
-<meta name="description" content="" />
-<meta name="keywords" content="" /> 
+<meta name="description" content="Challenge Radio - live from Salford at the Radio Festival 2014" />
+<meta name="keywords" content="Challenge Radio, Anneka Rice, " /> 
 <meta name="DCTERMS.created" content="" /> 
 <meta name="DCTERMS.modified" content="" /> 
 <link rel="schema.dcterms" href="http://purl.org/dc/terms/" /> 
@@ -40,7 +40,7 @@ var currentStationName = "Challenge Radio";
 var nowPlayingSource = 'default';
 
 // -- xDomainProxyUrl should be the full URL to the xdomainproxy.html file, which by default is found in the preroll-framework directory
-//var xDomainProxyUrl = "http://your-console-domain.com/console-path/preroll-framework/xdomainproxy.html";
+//var xDomainProxyUrl = "http://radioplayer.challengeradio.co.uk/preroll-framework/xdomainproxy.html";
 var xDomainProxyUrl = "";
 
 // -- initOptions can be populated with settings for actions when the console starts. See integration guide for details.
@@ -78,6 +78,7 @@ var audioFlash = [{
 }];
 
 // -- Add your HTML5 supported stream details here
+// -- THIS NEEDS TO BE A DIRECT mp3 to work with HTML5 for iPADS! 
 var audioHTML = [{
     audioType: 'http',
     audioUrl: 'http://mp3streamingb.planetwideradio.com:9910/ChallengeRadioMP3'
@@ -290,20 +291,8 @@ dark-theme may be swapped for light-theme
 			
 		</div>
 		<div class="radioplayer-body">
-			<div class="radioplayer-plugin">              
-<!-- 
-*
-* Plugin Space Starts here
-*
--->
-							<a href="" target="_blank">
-					<img src="img/plugin-space-image.png" alt="" style="border:0;" />
-				</a>
-			<!-- 
-*
-* Plugin Space Ends here
-*
---> 
+			<div class="radioplayer-plugin">     
+				<?php require_once('plugin-space.php'); ?>         
 			</div>
 		</div>  
 	
