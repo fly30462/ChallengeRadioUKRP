@@ -1,3 +1,22 @@
+@font-face {
+    font-family: 'RadFest';
+    src: url('../../doc_root/wp-content/themes/challenge-radio-theme/fonts/FFF-Tusj-fontfacekit/FFF_Tusj-webfont.eot');
+    src: url('../../wp-content/themes/challenge-radio-theme/fonts/FFF-Tusj-fontfacekit/FFF_Tusj-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../wp-content/themes/challenge-radio-theme/fonts/FFF-Tusj-fontfacekit/FFF_Tusj-webfont.woff') format('woff'),
+         url('../../wp-content/themes/challenge-radio-theme/fonts/FFF-Tusj-fontfacekit/FFF_Tusj-webfont.ttf') format('truetype'),
+         url('../../wp-content/themes/challenge-radio-theme/fonts/FFF-Tusj-fontfacekit/FFF_Tusj-webfont.svg#fff_tusjbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.RadFestFont {
+	font-family: "RadFest", Helvetica, Arial;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+
 #station-logo-link {
 	/**
 	 * Station Logo
@@ -13,4 +32,31 @@ body.showing-overlay .radioplayer-head {
 	 * Images should be 380px width by 620px height
 	 */
 	background: #512689;
+}
+
+
+/* plugin space full is 517px X 360px; */
+
+#bottom {
+	position: absolute;
+	bottom: 2.5px;
+	right:2.5px;
+}
+#bottom i {
+	color:#fff;
+	position: relative;
+	bottom:25px;
+
+}
+
+#plugin-space {
+	height: 434px;
+	overflow: hidden;
+}
+
+.widget-title {
+	font-family: "RadFest", Helvetica, Arial;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color:#fff;
 }
