@@ -3,6 +3,6 @@
 "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd">
 <cross-domain-policy>
    <site-control permitted-cross-domain-policies="all"/>
-   <allow-access-from domain="*.example.com" secure="false"/>
-   <allow-http-request-headers-from domain="*.example.com" headers="*" secure="false"/>
+   <allow-access-from domain="*.challengeradio.co.uk" secure="false"/>
+   <allow-http-request-headers-from domain="*.challengeradio.co.uk" headers="*" secure="false"/>
 </cross-domain-policy>
