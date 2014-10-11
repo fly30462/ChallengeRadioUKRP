@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'RadFest';
-    src: url('http://www.challengeradio.co.uk/wp-content/themes/challenge-radio-theme/fonts/FFF-Tusj-fontfacekit/FFF_Tusj-webfont.eot');
-    src: url('http://www.challengeradio.co.uk/wp-content/themes/challenge-radio-theme/fonts/FFF-Tusj-fontfacekit/FFF_Tusj-webfont.eot?#iefix') format('embedded-opentype'),
-         url('http://www.challengeradio.co.uk/wp-content/themes/challenge-radio-theme/fonts/FFF-Tusj-fontfacekit/FFF_Tusj-webfont.woff') format('woff'),
-         url('http://www.challengeradio.co.uk/wp-content/themes/challenge-radio-theme/fonts/FFF-Tusj-fontfacekit/FFF_Tusj-webfont.ttf') format('truetype'),
-         url('http://www.challengeradio.co.uk/wp-content/themes/challenge-radio-theme/fonts/FFF-Tusj-fontfacekit/FFF_Tusj-webfont.svg#fff_tusjbold') format('svg');
+    src: url('../fonts/FFF-Tusj-fontfacekit/FFF_Tusj-webfont.eot');
+    src: url('../fonts/FFF-Tusj-fontfacekit/FFF_Tusj-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FFF-Tusj-fontfacekit/FFF_Tusj-webfont.woff') format('woff'),
+         url('../fonts/FFF-Tusj-fontfacekit/FFF_Tusj-webfont.ttf') format('truetype'),
+         url('../fonts/FFF-Tusj-fontfacekit/FFF_Tusj-webfont.svg#fff_tusjbold') format('svg');
     font-weight: normal;
     font-style: normal;
 
