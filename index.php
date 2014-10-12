@@ -27,8 +27,6 @@ code, for any other purpose or to any third party, without the prior written con
 
 <link type="text/css" rel="stylesheet" media="screen" href="style/radioplayer.min.css" />
 <link type="text/css" rel="stylesheet" media="screen" href="style/theme.css" />
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" type="text/css" />
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 <script type="text/javascript">
 /**
@@ -300,7 +298,6 @@ dark-theme may be swapped for light-theme
 	
 	</div>
   </div>
-	
 <!-- jQuery UI with only: core, widget, mouse, position, draggable and droppable -->
 <script type="text/javascript" src="js/radioplayer.min.js"></script>
  
