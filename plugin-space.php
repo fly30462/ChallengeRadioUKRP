@@ -22,6 +22,7 @@ $who = who_to_contact();
 		<div class="winegum orange">
 			<h3 class="widget-title RadFestFont">Contact <?php echo $who; ?></h3>
 			<form method="post" id="contactform" action="">
+				<div class="results">&nbsp;</div>
 				<div class="form-group">
 					<input type="text" placeholder="Your Name..." class="form-control" name="name" />
 				</div>
@@ -62,11 +63,24 @@ $who = who_to_contact();
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 <script type="text/javascript">
+
+var contactClone = jQuery("#contactform").clone(); // Do this on $(document).ready(function() { ... })
+jQuery("#contactform").replaceWith(contactClone); 
+//$("#some_div").html("Yeah all good mate!"); // Change the content temporarily
+
+// Use this command if you want to keep divClone as a copy of "#some_div"
+//jQuery("#contactform").replaceWith(contactClone.clone()); // Restore element with a copy of divClone
+
+// Any changes to "#some_div" after this point will affect the value of divClone
+jQuery("#contactform").replaceWith(contactClone); 
+
+
 // Attach a submit handler to the form
 // variable to hold request
 var request;
 // bind to the submit event of our form
 jQuery("#contactform").submit(function(event){
+var contactClone = jQuery("#contactform").clone(); // Do this on $(document).ready(function() { ... })
     // abort any pending request
     if (request) {
         request.abort();
@@ -94,7 +108,8 @@ jQuery("#contactform").submit(function(event){
     request.done(function (response, textStatus, jqXHR){
         // log a message to the console
         console.log("Hooray, it worked!");
-        jQuery("#contactform").html("Thankyou!");
+        jQuery("#contactform .results").html("<p>Thankyou!</p>");
+
     });
 
     // callback handler that will be called on failure
